@@ -11,15 +11,17 @@ function App() {
   useEffect(() => {
     const optionsData = {
       accept1: {
-        embedText: `Dear {{name}}, Hiện tại {{name}} có đăng ký điểm thanh toán Momo tại địa chỉ {{address}} Nhờ {{name}} xác nhận tên thương hiệu và địa chỉ của quán là chính xác qua tin nhắn này giúp em để bên {{vocative}} tiến hành hỗ trợ xác minh cho cửa hàng mình ạ, {{vocative}} cảm ơn `,
+        embedText: `Dear {{name}}, Hiện tại {{name}} có đăng ký điểm thanh toán Momo MID: {{MID}}; Tên CH: {{shop_name}}; Tại địa chỉ {{address}} .Nhờ {{name}} xác nhận tên thương hiệu và địa chỉ của quán là chính xác qua tin nhắn này giúp {{vocative}} để bên {{vocative}} tiến hành hỗ trợ xác minh cho cửa hàng mình ạ, {{vocative}} cảm ơn `,
         inputList: [
           { key: 'vocative', value: 'em' },
           { key: 'name', value: '' },
+          { key: 'MID', value: '' },
+          { key: 'shop_name', value: '' },
           { key: 'address', value: '' },
         ],
       },
       accept2: {
-        embedText: `Dear {{name}}, Hiện tại {{name}} có đăng ký điểm thanh toán Momo MID: {{MID}}; Tên CH: {{shop_name}}; Nhờ {{name}} xác nhận qua tin nhắn này giúp {{vocative}} hiện tại địa chỉ cửa hàng mình đang hoạt động 2 loại hình khác nhau là {{types}} muốn tách biệt doanh thu để thuận tiện cho việc quản lý nguồn tiền khách thanh toán. Bên {{name}} xác nhận lại thông tin để {{vocative}} tiến hành hỗ trợ cho mình ạ ,{{vocative}} cảm ơn ạ`,
+        embedText: `Dear {{name}}, Hiện tại {{name}} có đăng ký điểm thanh toán Momo MID: {{MID}}; Tên CH: {{shop_name}}; Tại địa chỉ {{address}} .Nhờ {{name}} xác nhận qua tin nhắn này giúp {{vocative}} hiện tại địa chỉ cửa hàng mình đang hoạt động 2 loại hình khác nhau là {{types}} muốn tách biệt doanh thu để thuận tiện cho việc quản lý nguồn tiền khách thanh toán. Bên {{name}} xác nhận lại thông tin để {{vocative}} tiến hành hỗ trợ cho mình ạ ,{{vocative}} cảm ơn ạ`,
         inputList: [
           { key: 'vocative', value: 'em' },
           { key: 'name', value: '' },
